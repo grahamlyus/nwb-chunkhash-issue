@@ -1,3 +1,4 @@
+import { CONSTANT_1 } from './constants.js'
 import './App.css'
 
 import React from 'react'
@@ -15,5 +16,11 @@ let App = React.createClass({
     </div>
   }
 })
+
+import('./split').then(module => {
+  module.default()
+})
+
+console.log(CONSTANT_1)
 
 export default App
